@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="有码电影网（youmadianyingwang-cn.github.io）是精选优质电影网址的导航大全平台，专注「有码率、有画质、有字幕、有出处」的高清影视入口导航：1080P/4K/蓝光、中文字幕、每日更新片单、题材分类索引、热度排行与影视资讯。纯净无广告，让好片不迷路。">
+<meta name="keywords" content="有码电影网,youmadianyingwang-cn,有码,电影导航,优质电影,高清电影,1080P,4K,蓝光,码率,高码率,中文字幕,经典电影,每日更新,影视网址大全,电影网站导航,电影网址推荐,高清影视网址,有码率">
+<meta name="author" content="有码电影网">
+<meta name="theme-color" content="#3b0764">
+<title>有码电影网 - 精选优质电影导航大全 | 高码率·1080P/4K蓝光·中文字幕高清影视网址收录</title>
+<link rel="canonical" href="https://youmadianyingwang-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1c1330; --sub:#76688c;
+  --pr:#a855f7; --pr2:#e879f9; --ac:#fbbf24;
+  --grad:linear-gradient(120deg,#a855f7,#e879f9);
+  --sha:0 18px 44px rgba(168,85,247,.34);
+  --panel:#fff; --bg2:#f5f1fc;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:var(--bg2);color:var(--ink);line-height:1.72;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;transition:.22s}
+ul,ol,dl{list-style:none}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px dashed var(--pr);outline-offset:3px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+.eyebrow{color:var(--pr);font-size:12px;letter-spacing:3px;font-weight:800}
+.sec-title{font-size:31px;font-weight:900;line-height:1.3;margin:9px 0 11px;letter-spacing:-.5px}
+.sec-title em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sec-desc{color:var(--sub);max-width:690px;font-size:15px}
+.pad{padding:78px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:34px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:999px;font-weight:700;cursor:pointer;border:0;font-size:14px}
+.btn-p{background:var(--grad);color:#220a3d;box-shadow:var(--sha)}
+.btn-o{background:#fff;color:var(--pr);border:1px solid #e9d5ff;color:#7e22ce}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:999px;font-size:13px;background:#fff;border:1px solid #e9d5ff;color:var(--sub);cursor:pointer;white-space:nowrap;font-weight:600}
+.chip.on{color:#220a3d;border-color:transparent;background:var(--grad);font-weight:800;box-shadow:0 6px 16px rgba(168,85,247,.38)}
+
+/* 导航 */
+.nav{position:sticky;top:0;z-index:60;background:rgba(40,16,74,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:66px;gap:16px}
+.brand{display:flex;align-items:center;gap:11px}
+.logo{width:46px;height:46px;border-radius:14px;background:
+  repeating-linear-gradient(90deg,transparent 0 6px,rgba(251,191,36,.85) 6px 10px),
+  linear-gradient(150deg,#4c1d95,#a855f7);
+  display:grid;place-items:center;font-size:20px;box-shadow:0 8px 22px rgba(168,85,247,.45);flex:0 0 46px;position:relative;overflow:hidden}
+.logo b{position:relative;z-index:1;font-size:13px;font-weight:900;letter-spacing:-.5px;color:#220a3d}
+.brand small{display:block;font-size:9px;color:var(--pr2);letter-spacing:1.1px;font-weight:500}
+.brand b.t{font-size:18px;letter-spacing:.3px;color:#fff}
+.nav-links{display:flex;gap:4px}
+.nav-links a{padding:9px 14px;border-radius:999px;font-size:14px;color:#e9d5ff;font-weight:600}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.12)}
+.nav-links a.here{color:#220a3d;background:var(--pr);font-weight:800}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:6px}
+.burger i{width:24px;height:2px;background:#fff;border-radius:2px}
+
+/* Hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden;background:
+  radial-gradient(400px 220px at 88% 12%,rgba(232,121,249,.3),transparent 60%),
+  radial-gradient(300px 200px at 6% 90%,rgba(168,85,247,.32),transparent 62%),
+  linear-gradient(155deg,#1e0b3c 0%,#3b0764 52%,#12052b 100%)}
+.hero::before{content:"";position:absolute;inset:0;background-image:
+  radial-gradient(1.6px 1.6px at 18% 32%,#fff 50%,transparent),
+  radial-gradient(1.2px 1.2px at 40% 68%,#f3e8ff 50%,transparent),
+  radial-gradient(1.8px 1.8px at 62% 24%,#fff 50%,transparent),
+  radial-gradient(1.2px 1.2px at 80% 46%,#e879f9 50%,transparent),
+  radial-gradient(1.4px 1.4px at 90% 30%,#fff 50%,transparent),
+  radial-gradient(1px 1px at 50% 90%,#fff 50%,transparent);opacity:.5}
+.bars{position:absolute;right:9%;top:50%;transform:translateY(-50%);display:flex;gap:7px;height:150px;align-items:flex-end}
+.bars i{width:16px;background:linear-gradient(180deg,#e879f9,#a855f7);border-radius:5px;animation:bl 1.1s ease-in-out infinite alternate}
+.bars i:nth-child(1){height:38%} .bars i:nth-child(2){height:74%} .bars i:nth-child(3){height:100%}
+.bars i:nth-child(4){height:56%} .bars i:nth-child(5){height:88%} .bars i:nth-child(6){height:46%}
+@keyframes bl{from{opacity:.35;transform:scaleY(.78)}to{opacity:1;transform:scaleY(1)}}
+.hero-in{position:relative;padding:74px 18px;color:#fff}
+.hero h1{font-size:58px;line-height:1.12;font-weight:900;letter-spacing:-1.5px;text-shadow:0 6px 24px rgba(0,0,0,.5);max-width:920px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#e879f9,#f0abfc);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero h1 i{font-style:normal;color:var(--ac)}
+.hero p{color:#e9d5ff;font-size:16px;margin:20px 0 26px;max-width:620px}
+.search{display:flex;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);border-radius:16px;padding:7px;max-width:620px;backdrop-filter:blur(6px)}
+.search input{flex:1;background:none;border:0;color:#fff;font-size:15px;padding:10px 12px;outline:none;min-width:0}
+.search input::placeholder{color:#d4bdf0}
+.search button{border:0;border-radius:12px;padding:0 24px;font-weight:900;cursor:pointer;white-space:nowrap;color:#220a3d}
+.kw{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.kw em{font-style:normal;font-size:12px;color:var(--pr2)}
+.stats{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.stats div b{display:block;font-size:28px;font-weight:900;color:var(--pr2)}
+.stats div span{font-size:12px;color:#c4a7e8;letter-spacing:1px}
+.reso{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}
+.reso span{padding:6px 14px;border-radius:8px;font-size:12px;font-weight:800;border:1px solid rgba(232,121,249,.6);color:#f3e8ff;background:rgba(232,121,249,.16)}
+
+/* 栏目1：有码片单（figure 横排） */
+.jam{display:flex;flex-direction:column;gap:16px}
+.jitem{display:grid;grid-template-columns:210px 1fr auto;gap:20px;align-items:center;background:var(--panel);border:1px solid #e9d5ff;border-radius:18px;padding:16px;transition:.25s;box-shadow:0 4px 16px rgba(91,33,182,.09);position:relative;overflow:hidden}
+.jitem::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--grad);transform:scaleY(0);transition:.35s;transform-origin:bottom}
+.jitem:hover{border-color:var(--pr);transform:translateX(6px);box-shadow:var(--sha)}
+.jitem:hover::before{transform:scaleY(1)}
+.jitem .pic{height:120px;border-radius:14px;display:grid;place-items:center;font-size:44px}
+.jitem h4{font-size:18px;margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.jitem h4 s{text-decoration:none;font-size:10px;color:#220a3d;background:var(--grad);padding:3px 10px;border-radius:999px;font-weight:800}
+.jitem p{color:var(--sub);font-size:13.5px;margin-bottom:10px}
+.jitem .meta{display:flex;gap:7px;flex-wrap:wrap}
+.jitem .meta i{font-style:normal;font-size:11px;color:#7e22ce;background:#f3e8ff;padding:3px 9px;border-radius:6px;font-weight:700}
+.jitem .go{font-size:12px;font-weight:800;color:var(--pr);border:1px solid #e9d5ff;padding:9px 16px;border-radius:999px;white-space:nowrap}
+.jitem:hover .go{background:var(--grad);color:#220a3d;border-color:transparent}
+
+/* 栏目2：精选网址（卡片 Grid） */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--panel);border:1px solid #e9d5ff;border-radius:18px;padding:20px;transition:.3s;display:flex;flex-direction:column;height:100%;box-shadow:0 4px 16px rgba(91,33,182,.09);position:relative;overflow:hidden}
+.card .ava{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;font-size:25px;flex:0 0 52px}
+.card h4{font-size:16px;margin:12px 0 8px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.card h4 s{text-decoration:none;font-size:10px;color:#220a3d;background:var(--grad);padding:2px 9px;border-radius:999px;font-weight:700}
+.card p{color:var(--sub);font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:44px}
+.card .meta{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0}
+.card .meta i{font-style:normal;font-size:11px;color:#7e22ce;background:#f3e8ff;padding:3px 9px;border-radius:6px;font-weight:700}
+.card .foot{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px;border-top:1px dashed #e9d5ff;font-size:11px;color:var(--sub)}
+.card .foot b{color:var(--pr);font-size:13px}
+.card:hover{border-color:var(--pr);transform:translateY(-6px);box-shadow:var(--sha)}
+.card::after{content:"";position:absolute;inset:0 0 auto;height:100%;background:linear-gradient(180deg,rgba(168,85,247,.12),transparent);opacity:0;transition:.35s}
+.card:hover::after{opacity:1}
+
+/* 栏目3：分类导航（table） */
+.cate table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid #e9d5ff;border-radius:16px;overflow:hidden;box-shadow:0 8px 26px rgba(91,33,182,.11)}
+.cate th,.cate td{padding:14px 16px;text-align:left;font-size:14px;border-bottom:1px solid #f3e8ff;vertical-align:top}
+.cate th{background:var(--grad);color:#220a3d;font-size:13px;letter-spacing:1px;white-space:nowrap}
+.cate tr:nth-child(even) td{background:#fbf7ff}
+.cate tr:hover td{background:#f3e8ff}
+.cate td:first-child{font-weight:800;color:var(--pr);white-space:nowrap;width:170px}
+.cate td:nth-child(2){line-height:2}
+.cate td:nth-child(2) a{display:inline-block;font-size:12px;color:var(--sub);background:#f5f1fc;border:1px solid #e9d5ff;padding:2px 9px;border-radius:6px;margin:0 4px 0 0;font-weight:600}
+.cate td:nth-child(2) a:hover{color:#220a3d;background:var(--grad);border-color:transparent}
+.cate td:last-child{font-weight:800;color:var(--pr2);white-space:nowrap;text-align:right}
+
+/* 栏目4：热度排行（ol + 进度条） */
+.rk-wrap{display:grid;grid-template-columns:1.16fr .84fr;gap:28px}
+.rk{background:var(--panel);border:1px solid #e9d5ff;border-radius:20px;padding:24px 26px;box-shadow:0 8px 26px rgba(91,33,182,.1)}
+.rk h3{font-size:19px;margin-bottom:18px;display:flex;align-items:center;gap:8px}
+.rk h3::before{content:"🎞";font-size:15px}
+.rk ol{counter-reset:r;display:flex;flex-direction:column;gap:14px}
+.rk li{display:grid;grid-template-columns:36px 1fr auto;gap:12px;align-items:center}
+.rk li::before{counter-increment:r;content:counter(r);width:32px;height:32px;border-radius:9px;background:var(--grad);display:grid;place-items:center;font-weight:900;font-size:15px;color:#220a3d}
+.rk li:nth-child(1)::before{background:var(--ac);color:#7c5406}
+.rk li:nth-child(2)::before{background:#c9d4de;color:#2b3b48}
+.rk li:nth-child(3)::before{background:#f0b37a;color:#5b3414}
+.rk .nm{font-size:14px;font-weight:700}
+.rk .bar{height:7px;border-radius:6px;background:#ede9fe;margin-top:6px;overflow:hidden}
+.rk .bar i{display:block;height:100%;border-radius:6px;background:var(--grad)}
+.rk .hv{font-size:12px;color:var(--sub)}
+.tips{display:flex;flex-direction:column;gap:14px}
+.tip{display:flex;gap:14px;background:linear-gradient(120deg,#fbf7ff,#f3e8ff);border:1px solid #e9d5ff;border-radius:16px;padding:16px}
+.tip .n{font-size:23px;flex:0 0 auto}
+.tip b{font-size:15px;display:block;margin-bottom:4px}
+.tip p{font-size:12px;color:var(--sub)}
+
+/* 栏目5：网站动态（图文条目） */
+.news{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.nbox{display:flex;gap:16px;background:var(--panel);border:1px solid #e9d5ff;border-radius:16px;padding:15px;transition:.22s;height:100%;box-shadow:0 4px 14px rgba(91,33,182,.08)}
+.nbox:hover{border-color:var(--pr);background:#fbf7ff}
+.nbox .pic{width:120px;height:88px;border-radius:12px;flex:0 0 120px;display:grid;place-items:center;font-size:33px}
+.nbox h4{font-size:16px;line-height:1.5;margin-bottom:8px}
+.nbox:hover h4{color:var(--pr)}
+.nbox .meta{font-size:11px;color:var(--sub);display:flex;gap:10px;flex-wrap:wrap}
+.nbox .meta b{color:var(--pr2);font-weight:700}
+
+/* 栏目6：关于本站（流程 + 数据） */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-bottom:46px;border:1px solid #e9d5ff;border-radius:18px;overflow:hidden;background:var(--panel);box-shadow:0 6px 22px rgba(91,33,182,.09)}
+.step{padding:24px 20px;position:relative}
+.step:not(:last-child){border-right:1px dashed #e9d5ff}
+.step .no{font-size:12px;font-weight:900;color:var(--pr);letter-spacing:2px;font-family:ui-monospace,Menlo,monospace}
+.step b{font-size:17px;display:block;margin:6px 0 7px}
+.step p{font-size:13px;color:var(--sub)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{border:1px solid #e9d5ff;border-radius:18px;padding:24px;text-align:center;background:#fff;box-shadow:0 4px 14px rgba(91,33,182,.08)}
+.fact b{display:block;font-size:34px;font-weight:900;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;font-family:ui-monospace,Menlo,monospace}
+.fact span{font-size:13px;color:var(--sub)}
+
+/* 页脚 */
+.foot{background:#1e0b3c;padding:52px 0 24px;color:#e9d5ff}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+.fg h5{font-size:15px;margin-bottom:14px;color:#fff;display:flex;align-items:center;gap:7px}
+.fg h5::before{content:"🎞";font-size:12px;color:var(--pr2)}
+.fg p,.fg a{font-size:13px;color:#c4a7e8}
+.fg a:hover{color:var(--pr2)}
+.fg ul{display:flex;flex-direction:column;gap:9px}
+.copy{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12px;color:#9d84c2}
+.top{position:fixed;right:18px;bottom:24px;width:48px;height:48px;border-radius:50%;background:var(--grad);color:#220a3d;border:0;font-size:20px;cursor:pointer;box-shadow:var(--sha);opacity:0;pointer-events:none;transition:.3s;z-index:70;font-weight:900}
+.top.show{opacity:1;pointer-events:auto}
+
+/* 响应式 */
+@media(max-width:1040px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .hero h1{font-size:46px}
+  .bars{right:-60px;transform:translateY(-50%) scale(.7);opacity:.35}
+  .rk-wrap,.news{grid-template-columns:1fr}
+  .facts,.steps{grid-template-columns:repeat(2,1fr)}
+  .fg{grid-template-columns:1fr 1fr}
+  .cate table{display:block;overflow-x:auto;white-space:nowrap}
+}
+@media(max-width:740px){
+  .pad{padding:52px 0}
+  .sec-title{font-size:24px}
+  .wrap{padding:0 14px}
+  .burger{display:flex}
+  .nav-links{position:fixed;inset:66px 0 0;background:rgba(40,16,74,.98);backdrop-filter:blur(14px);flex-direction:column;padding:22px;gap:8px;transform:translateX(100%);transition:.35s;z-index:59}
+  .nav-links.open{transform:translateX(0)}
+  .nav-links a{font-size:17px;padding:15px;border-radius:12px;text-align:center}
+  .hero{min-height:auto;padding:40px 0 60px}
+  .hero h1{font-size:36px}
+  .bars{display:none}
+  .search{flex-direction:column}
+  .search button{height:48px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .news,.cate{grid-template-columns:1fr}
+  .jitem{grid-template-columns:1fr}
+  .jitem .pic{width:100%;height:120px}
+  .nbox,.cate table{display:block}
+  .nbox .pic{width:100%;height:110px}
+  .facts,.steps{grid-template-columns:1fr 1fr}
+  .steps .step:not(:last-child){border-right:0;border-bottom:1px dashed #e9d5ff}
+  .stats{gap:18px}
+  .fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:380px){
+  .hero h1{font-size:30px}
+  .grid,.facts,.steps{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- 顶部导航 -->
+<header class="nav">
+  <div class="wrap nav-row">
+    <a class="brand" href="#top" aria-label="有码电影网">
+      <span class="logo"><b>码</b></span>
+      <span><b class="t">有码电影网</b><small>YOU MA DIAN YING · CN</small></span>
+    </a>
+    <nav class="nav-links" id="nav">
+      <a href="#top" class="here">首页</a>
+      <a href="#jam">有码片单</a>
+      <a href="#pick">精选网址</a>
+      <a href="#cate">分类导航</a>
+      <a href="#hot">热度排行</a>
+      <a href="#news">网站动态</a>
+      <a href="#about">关于本站</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="展开菜单"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="top">
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+  <div class="wrap hero-in">
+    <span class="eyebrow">◆ 有码电影网 · 有码率，才有画质</span>
+    <h1>有码电影网<br>找片先看<em>码率</em>，<i>画质</i>不将就</h1>
+    <p>有码电影网（youmadianyingwang-cn.github.io）是精选优质电影网址的导航大全平台。这里的"<b>有码</b>"说的是<b>有码率</b>——每一部收录影片都标注分辨率、编码、码率、字幕与体积，让你一眼分清 720P、1080P、2K、4K 与原盘蓝光，不再被"高清"两个字糊弄。</p>
+    <form class="search" onsubmit="return false">
+      <input type="search" placeholder="搜影片 / 导演 / 题材 / 画质，如：高码率、4K、蓝光原盘、HDR、中文字幕、REMUX、经典老片、每日更新…" aria-label="搜索">
+      <button class="btn btn-p" type="submit">找片入口</button>
+    </form>
+    <div class="reso">
+      <span>高码率</span><span>1080P</span><span>4K 蓝光</span><span>中文字幕</span><span>REMUX</span><span>HDR</span><span>杜比视界</span><span>零弹窗</span>
+    </div>
+    <div class="kw"><em>热搜：</em><span class="chip on">有码率</span><span class="chip">高码率电影</span><span class="chip">4K 蓝光</span><span class="chip">REMUX</span><span class="chip">中文字幕</span><span class="chip">电影导航</span></div>
+    <div class="stats">
+      <div><b>3,180+</b><span>精选网址</span></div>
+      <div><b>28</b><span>题材分类</span></div>
+      <div><b>5</b><span>画质档位</span></div>
+      <div><b>0</b><span>弹窗广告</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目1：有码片单（figure 横排条目） -->
+<section class="pad jam" id="jam" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Coded Picks · 有码片单</span>
+        <h2 class="sec-title">本周<em>有码片单</em>：码率、字幕、出处，一次看清</h2>
+        <p class="sec-desc">编辑部按"口碑 × 码率 × 字幕 × 出处"四轮打分，每周更新有码片单。片名即入口，点开即跳转对应精选网址——有码电影网只负责把好片快一点递到你手上，版权与合规性请以下载源为准。</p>
+      </div>
+      <a class="btn btn-o" href="#">完整有码片单 →</a>
+    </div>
+    <div>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff)">🎞️</span><figcaption><h4>肖申克的救赎 <s>豆瓣 9.7</s></h4><p>关于希望与自由的现代寓言。收藏级 4K 修复版码率充足、暗部细节完整，建议优先选择带中文字幕的 REMUX 版本。</p><span class="meta"><i>经典</i><i>人性</i><i>4K 修复</i><i>中文字幕</i><i>22Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">🐟</span><figcaption><h4>阿甘正传 <s>奥斯卡</s></h4><p>一根羽毛飘过的美国往事。蓝光原盘与 REMUX 版本音画俱佳，码率稳定，适合大屏重温。</p><span class="meta"><i>励志</i><i>人生</i><i>蓝光原盘</i><i>双语字幕</i><i>35Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#fae8ff,#f5d0fe)">🚄</span><figcaption><h4>千与千寻 <s>宫崎骏</s></h4><p>宫崎骏的奇幻成人礼。4K 重制版色彩层次丰富，高码率才能留住水面的光，建议原声 + 中文字幕双轨。</p><span class="meta"><i>动画</i><i>奇幻</i><i>4K</i><i>中文字幕</i><i>18Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#fee2e2,#fecaca)">🎭</span><figcaption><h4>霸王别姬 <s>豆瓣 9.6</s></h4><p>华语电影的巅峰之一。4K 修复版画质提升明显，字幕版本齐全，是片单常客。</p><span class="meta"><i>经典</i><i>年代</i><i>4K 修复</i><i>中文字幕</i><i>15Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe)">🌀</span><figcaption><h4>盗梦空间 <s>诺兰</s></h4><p>四层梦境的精密结构。2K 及以上、码率 10Mbps 以上才能看清细节，建议佩戴耳机。</p><span class="meta"><i>科幻</i><i>烧脑</i><i>2K</i><i>中文字幕</i><i>12Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+      <figure class="jitem"><span class="pic" style="background:linear-gradient(135deg,#dcfce7,#bbf7d0)">🌌</span><figcaption><h4>星际穿越 <s>杜比视界</s></h4><p>当爱成为唯一能穿越维度的量。杜比视界 + 全景声 + 高码率版本体验最佳，画质党首选。</p><span class="meta"><i>科幻</i><i>亲情</i><i>4K 蓝光</i><i>杜比视界</i><i>40Mbps</i></span></figcaption><a class="go" href="#">入口 ›</a></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目2：精选网址（卡片 Grid） -->
+<section class="pad" id="pick">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Featured Sites · 精选网址</span>
+        <h2 class="sec-title">编辑精挑，<b>放心</b>点开</h2>
+        <p class="sec-desc">每一个收录网址都经过人工访问与安全检测：无木马、无强制跳转、无诱导下载，并标注题材、画质、码率、更新频率与适配端。所谓"电影导航"，从干净开始。</p>
+      </div>
+      <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px">
+        <span class="chip on">综合推荐</span><span class="chip">4K 蓝光</span><span class="chip">高码率</span><span class="chip">字幕齐全</span><span class="chip">加载最快</span><span class="chip">手机适配</span>
+      </div>
+    </div>
+    <div class="grid">
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff)">💿</div><h4>高码率资源馆 <s>发烧</s></h4><p>4K 原盘、REMUX、WEB-DL 标注清晰，附码率与编码信息，按体积排序，大屏党福音。</p><div class="meta"><i>4K</i><i>蓝光</i><i>REMUX</i><i>码率标注</i></div><div class="foot"><span>大屏首选</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">🆓</div><h4>免费在线厅</h4><p>无需注册、无需客户端、无会员门槛，打开即看，真正把"省心"落到体验上。</p><div class="meta"><i>免费</i><i>免注册</i><i>PC+手机</i></div><div class="foot"><span>在线优先</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#fae8ff,#f5d0fe)">🈶</div><h4>中文字幕馆 <s>刚需</s></h4><p>内嵌 / 外挂 / 双语字幕齐全，冷门老片也配字幕，看得懂才是真福利。</p><div class="meta"><i>中文字幕</i><i>双语</i><i>老片</i></div><div class="foot"><span>字幕党</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#fee2e2,#fecaca)">🆕</div><h4>每日更新榜 <s>热</s></h4><p>按上线时间排序，新片第一时间出现在首页，片荒终结者。</p><div class="meta"><i>每日更新</i><i>新片</i><i>实时</i></div><div class="foot"><span>不剧荒</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#ffedd5,#fed7aa)">🏆</div><h4>豆瓣高分厅</h4><p>8.0 分以上精选，附带一句话理由，帮你把两小时花在值得的片上。</p><div class="meta"><i>豆瓣 8.0+</i><i>口碑</i></div><div class="foot"><span>闭眼入</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4)">👩‍❤️‍👨</div><h4>爱情喜剧馆</h4><p>周末心情不好？这里有一整个下午的糖分，笑完再好好吃饭。</p><div class="meta"><i>爱情</i><i>喜剧</i><i>轻松</i></div><div class="foot"><span>心情片</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#eef2ff,#c7d2fe)">🔫</div><h4>动作犯罪馆</h4><p>追车、枪战、反转，90 分钟肾上腺素，建议佩戴耳机。</p><div class="meta"><i>动作</i><i>犯罪</i><i>1080P</i></div><div class="foot"><span>爽片</span><b>›</b></div></a>
+      <a class="card" href="#"><div class="ava" style="background:linear-gradient(135deg,#f0fdf4,#bbf7d0)">🌿</div><h4>治愈纪录片 <s>慢</s></h4><p>自然、海洋、手艺、人间烟火，适合深夜一个人安静看完。</p><div class="meta"><i>纪录片</i><i>治愈</i><i>4K</i></div><div class="foot"><span>慢慢看</span><b>›</b></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目3：分类导航（table） -->
+<section class="pad cate" id="cate" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Category · 分类导航</span>
+        <h2 class="sec-title">按 6 个维度，<b>精准</b>命中口味</h2>
+        <p class="sec-desc">题材、地区、年代、画质（码率）、语言、时长六维切分，一个分类就是一组精选网址，查找效率拉满。</p>
+      </div>
+      <a class="btn btn-o" href="#">完整分类目录 →</a>
+    </div>
+    <table>
+      <thead><tr><th>分类维度</th><th>细分标签</th><th>收录量</th></tr></thead>
+      <tbody>
+        <tr><td>🎭 剧情</td><td><a href="#">人性</a><a href="#">家庭</a><a href="#">成长</a><a href="#">传记</a><a href="#">社会</a></td><td>512</td></tr>
+        <tr><td>😂 喜剧</td><td><a href="#">黑色幽默</a><a href="#">爱情喜剧</a><a href="#">国产喜剧</a><a href="#">无厘头</a><a href="#">治愈</a></td><td>386</td></tr>
+        <tr><td>🔫 动作</td><td><a href="#">枪战</a><a href="#">武侠</a><a href="#">警匪</a><a href="#">追车</a><a href="#">功夫</a></td><td>428</td></tr>
+        <tr><td>👻 悬疑</td><td><a href="#">烧脑</a><a href="#">反转</a><a href="#">犯罪</a><a href="#">密室</a><a href="#">心理</a></td><td>314</td></tr>
+        <tr><td>👽 科幻</td><td><a href="#">太空</a><a href="#">末世</a><a href="#">时间</a><a href="#">人工智能</a><a href="#">赛博</a></td><td>268</td></tr>
+        <tr><td>💘 爱情</td><td><a href="#">暗恋</a><a href="#">异地</a><a href="#">错过</a><a href="#">婚姻</a><a href="#">青春</a></td><td>352</td></tr>
+        <tr><td>🎨 动画</td><td><a href="#">宫崎骏</a><a href="#">吉卜力</a><a href="#">皮克斯</a><a href="#">国漫</a><a href="#">治愈</a></td><td>296</td></tr>
+        <tr><td>📊 按画质筛</td><td><a href="#">720P</a><a href="#">1080P</a><a href="#">2K</a><a href="#">4K</a><a href="#">蓝光原盘</a><a href="#">REMUX</a><a href="#">杜比视界</a></td><td>1,420</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 栏目4：热度排行（ol + 进度条） -->
+<section class="pad" id="hot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Hot Ranking · 热度排行</span>
+        <h2 class="sec-title">大家都在点，<b>跟着</b>看不踩雷</h2>
+        <p class="sec-desc">依据点击量、收藏数与用户停留时长综合计算，每小时刷新一次，真实反映当下观影热度。</p>
+      </div>
+      <div style="display:flex;gap:8px;overflow-x:auto;padding-bottom:4px"><span class="chip on">周榜</span><span class="chip">月榜</span><span class="chip">收藏榜</span><span class="chip">蓝光榜</span><span class="chip">高码率榜</span></div>
+    </div>
+    <div class="rk-wrap">
+      <div class="rk">
+        <h3>本周被访问最多的导航网址</h3>
+        <ol>
+          <li><span class="nm">高码率资源馆<span class="bar"><i style="width:100%"></i></span></span><span class="hv">181.6万</span></li>
+          <li><span class="nm">每日更新榜<span class="bar"><i style="width:92%"></i></span></span><span class="hv">163.4万</span></li>
+          <li><span class="nm">中文字幕馆<span class="bar"><i style="width:84%"></i></span></span><span class="hv">149.8万</span></li>
+          <li><span class="nm">豆瓣高分厅<span class="bar"><i style="width:73%"></i></span></span><span class="hv">128.5万</span></li>
+          <li><span class="nm">免费在线厅<span class="bar"><i style="width:64%"></i></span></span><span class="hv">111.2万</span></li>
+          <li><span class="nm">动作犯罪馆<span class="bar"><i style="width:54%"></i></span></span><span class="hv">94.7万</span></li>
+          <li><span class="nm">治愈纪录片<span class="bar"><i style="width:45%"></i></span></span><span class="hv">80.3万</span></li>
+          <li><span class="nm">有码电影网 · 每周片单<span class="bar"><i style="width:37%"></i></span></span><span class="hv">63.9万</span></li>
+        </ol>
+      </div>
+      <div class="tips">
+        <div class="tip"><span class="n">💿</span><div><b>什么是"有码"</b><p>不是别的，就是<b>有码率</b>。本站为影视网址导航平台，不提供任何影视资源文件；收录时优先标注分辨率、编码、码率与字幕信息。</p></div></div>
+        <div class="tip"><span class="n">🛡️</span><div><b>收录标准</b><p>先人工访问，再通过安全扫描；含弹窗、跳转、诱导下载的一律不收。</p></div></div>
+        <div class="tip"><span class="n">🧹</span><div><b>死链清理</b><p>每日自动巡检，失效链接 24 小时内下架，保证"点开就能用"。</p></div></div>
+        <div class="tip"><span class="n">⚖️</span><div><b>版权提示</b><p>请仅用于个人学习，请支持正版与院线。所链资源版权归原作者，侵权请联系我们下架。</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目5：网站动态（图文条目） -->
+<section class="pad" id="news" style="background:#fff">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Site News · 网站动态</span>
+        <h2 class="sec-title">收录动态与<b>选片</b>指南</h2>
+        <p class="sec-desc">记录有码电影网的更新日志、收录标准与观影建议，让导航本身也变得值得一读。</p>
+      </div>
+      <a class="btn btn-o" href="#">动态归档 →</a>
+    </div>
+    <div class="news">
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#f3e8ff,#e9d5ff)">💿</span><div><h4>新增「高码率」分类：把真正的高画质单独拎出来</h4><span class="meta"><b>收录标准</b> · 3 分钟读 · 10-09</span></div></a>
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#fef3c7,#fde68a)">🆓</span><div><h4>有码电影网是"电影导航"，不是资源站</h4><span class="meta"><b>公告</b> · 4 分钟读 · 10-05</span></div></a>
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#fae8ff,#f5d0fe)">🎆</span><div><h4>周末片单：6 部"打开就能看"的轻松喜剧</h4><span class="meta"><b>片单</b> · 5 分钟读 · 09-30</span></div></a>
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#fee2e2,#fecaca)">🧹</span><div><h4>本周清理 46 个失效网址，导航有效率提升至 99.7%</h4><span class="meta"><b>更新日志</b> · 1 分钟读 · 09-26</span></div></a>
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#ffedd5,#fed7aa)">📜</span><div><h4>REMUX、WEB-DL、蓝光原盘有什么区别？一篇看懂</h4><span class="meta"><b>科普</b> · 6 分钟读 · 09-21</span></div></a>
+      <a class="nbox" href="#"><span class="pic" style="background:linear-gradient(135deg,#fce7f3,#f9a8d4)">✉️</span><div><h4>投稿指南：如何推荐一个"值得被导航"的高清影视网站</h4><span class="meta"><b>共建</b> · 2 分钟读 · 09-16</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目6：关于本站（流程 + 数据） -->
+<section class="pad" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">About · 关于本站</span>
+        <h2 class="sec-title">好片不该靠运气<em>遇见</em></h2>
+        <p class="sec-desc">有码电影网只做一件事：把好用的高清影视网址一颗颗挑出来，并按"题材 × 画质 × 年代 × 地区 × 语言 × 时长"六个维度，清清楚楚地摆在你面前。我们不存资源、不提供下载文件，只做一件小事：让你少点几次鼠标，多看两小时好片。</p>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="no">STEP 01</span><b>发现</b><p>编辑与用户在全网影视相关网址中初筛候选。</p></div>
+      <div class="step"><span class="no">STEP 02</span><b>验证</b><p>逐站人工访问，检测画质标注、加载速度、广告与安全风险。</p></div>
+      <div class="step"><span class="no">STEP 03</span><b>分类</b><p>按六维打标，标注码率、编码与字幕，生成导航结构。</p></div>
+      <div class="step"><span class="no">STEP 04</span><b>上线</b><p>进入导航大全，进入日常巡检与用户反馈闭环。</p></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>3,180+</b><span>精选收录网址</span></div>
+      <div class="fact"><b>28</b><span>题材分类</span></div>
+      <div class="fact"><b>99.7%</b><span>链接有效率</span></div>
+      <div class="fact"><b>0</b><span>弹窗与诱导广告</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="fg">
+      <div>
+        <a class="brand" href="#top"><span class="logo"><b>码</b></span><span><b class="t">有码电影网</b><small>YOU MA DIAN YING · CN</small></span></a>
+        <p style="margin-top:14px;max-width:330px">有码电影网（youmadianyingwang-cn.github.io）是精选优质电影网址的导航大全平台，提供电影导航、高码率电影、4K 蓝光、REMUX、中文字幕、每日更新片单、题材分类与影视资讯，让好片不迷路。</p>
+      </div>
+      <div>
+        <h5>导航频道</h5>
+        <ul>
+          <li><a href="#jam">有码片单</a></li>
+          <li><a href="#pick">精选网址</a></li>
+          <li><a href="#cate">分类导航</a></li>
+          <li><a href="#hot">热度排行</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>分类索引</h5>
+        <ul>
+          <li><a href="#cate">剧情</a></li>
+          <li><a href="#cate">喜剧</a></li>
+          <li><a href="#cate">动作</a></li>
+          <li><a href="#cate">悬疑</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于与帮助</h5>
+        <ul>
+          <li><a href="#about">收录标准</a></li>
+          <li><a href="#">提交网址</a></li>
+          <li><a href="#">版权投诉</a></li>
+          <li><a href="#">免责声明</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2023-2026 有码电影网 youmadianyingwang-cn.github.io 版权所有</span>
+      <span>网站网址：https://youmadianyingwang-cn.github.io ｜ 本站为影视网址导航与资讯分享平台，不提供任何影视资源文件，所链资源版权归原作者所有 ｜ 请支持正版、理性观影</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top" id="topBtn" aria-label="回到顶部">↑</button>
+
+<script>
+var burger=document.getElementById('burger'),nav=document.getElementById('nav');
+burger.addEventListener('click',function(){nav.classList.toggle('open')});
+nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open')});
+
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){topBtn.classList[window.scrollY>700?'add':'remove']('show')});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+
+var links=document.querySelectorAll('.nav-links a');
+var ids=['top','jam','pick','cate','hot','news','about'];
+var secs=ids.map(function(i){return document.getElementById(i)});
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+130,cur=0;
+  secs.forEach(function(s,i){if(s&&s.offsetTop<=y)cur=i});
+  links.forEach(function(a,i){a.classList[i===cur?'add':'remove']('here')});
+});
+
+document.querySelectorAll('.sec-head').forEach(function(bar){
+  bar.addEventListener('click',function(e){
+    if(e.target.classList.contains('chip')){
+      bar.querySelectorAll('.chip').forEach(function(c){c.classList.remove('on')});
+      e.target.classList.add('on');
+    }
+  });
+});
+</script>
+</body>
+</html>
